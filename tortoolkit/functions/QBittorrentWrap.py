@@ -638,7 +638,7 @@ async def get_confirm(e):
     start = time.time()
 
     while not lis[0]:
-        if (time.time() - start) >= 180:
+        if (time.time() - start) >= 1:
             break
         await aio.sleep(1)
 
